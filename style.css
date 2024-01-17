@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.carta {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.carta img {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #ccc;
+}
+
+
+.carta.seleccionada img {
+  border: 6px solid #ff0000; /* Borde amarillo para cartas seleccionadas */
+}
+
+/* Agrega estilos específicos para la clase del contenedor de Swiper */
+.slider-container {
+  max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+  margin: auto; /* Centra el contenedor horizontalmente */
+}
+
+
+.swiper-container {
+  width: 100%;
+  position: relative;
+}
+
+
+/* Estilo para la paginación del Swiper */
+.swiper-pagination {
+  position: absolute;
+  top: 0; /* Ajusta según sea necesario */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Estilo para cada punto de la paginación */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fdfdfd;
+  opacity: 0.7;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo para el punto activo de la paginación */
+.swiper-pagination-bullet-active {
+  background-color: #ff0303; /* Cambia el color del punto activo */
+}
+
+/* Estilo específico para las imágenes dentro de las diapositivas de Swiper */
+.swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%; 
+  height: 300px; 
+  object-fit: contain;
+}
+
+.whatsapp-button {
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
+/* Estilo para el enlace de WhatsApp */
+.whatsapp-link {
+  text-decoration: none;
+  color: #ffffff; /* Cambia el color del texto según sea necesario */
+  background-color: #25d366; /* Cambia el color de fondo según sea necesario */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.whatsapp-link:hover {
+  background-color: #128c7e; /* Cambia el color de fondo al pasar el ratón sobre el enlace */
+}
+
+h2 {
+  color: #ff0000; /* Cambia el color del texto según sea necesario */
+}
+
+
+
+/* Estilos específicos para pantallas de hasta 500px */
+@media screen and (max-width: 500px) {
+  .carta img {
+    width: 80px; /* Reducir el ancho de las cartas para pantallas pequeñas */
+    height: 120px; /* Ajusta la altura en consecuencia */
+  }
+
+  .carta.seleccionada img {
+    border-width: 4px; /* Reducir el grosor del borde en pantallas pequeñas */
+  }
+
+  .swiper-container .swiper-wrapper .swiper-slide img {
+    height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+  }
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.swiper-container {
+  width: 100%;
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fdfdfd;
+  opacity: 0.7;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff0303;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
